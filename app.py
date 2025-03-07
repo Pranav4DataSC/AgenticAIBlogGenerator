@@ -13,7 +13,7 @@ import streamlit as st  # Import Streamlit for web app development
 
 
 # Set the Hugging Face Hub API token as an environment variable
-os.environ['HUGGINGFACEHUB_API_TOKEN'] = HUGGINGFACE_API_KEY
+#os.environ['HUGGINGFACEHUB_API_TOKEN'] = HUGGINGFACE_API_KEY
 
 # Define the Hugging Face model repository ID
 #repo_id = "meta-llama/Meta-Llama-3-8B-Instruct"
