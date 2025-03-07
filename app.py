@@ -1,7 +1,7 @@
 import os
 #from secret import HUGGINGFACE_API_KEY
-HUGGINGFACEHUB_API_TOKEN = HUGGINGFACE_API_KEY
-#HUGGINGFACEHUB_API_TOKEN = os.environ.get(HUGGINGFACE_API_KEY)
+#HUGGINGFACEHUB_API_TOKEN = HUGGINGFACE_API_KEY
+HUGGINGFACEHUB_API_TOKEN = os.environ.get(HUGGINGFACE_API_KEY)
 
 from langchain_huggingface import HuggingFaceEndpoint  # Import Hugging Face endpoint class
 from secret import HUGGINGFACE_API_KEY # Import secret API key from separate file
