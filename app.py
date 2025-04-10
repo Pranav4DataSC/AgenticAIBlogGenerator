@@ -4,7 +4,7 @@ import os
 #HUGGINGFACEHUB_API_TOKEN = os.environ.get(HUGGINGFACE_API_KEY)
 
 from langchain_huggingface import HuggingFaceEndpoint  # Import Hugging Face endpoint class
-from secret import HUGGINGFACE_API_KEY # Import secret API key from separate file
+#from secret import HUGGINGFACE_API_KEY # Import secret API key from separate file
 from langchain.prompts import PromptTemplate  # Import PromptTemplate class from langchain
 from dotenv import load_dotenv
 
