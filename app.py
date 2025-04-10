@@ -1,19 +1,21 @@
 import os
 #from secret import HUGGINGFACE_API_KEY
 #HUGGINGFACEHUB_API_TOKEN = HUGGINGFACE_API_KEY
-HUGGINGFACEHUB_API_TOKEN = os.environ.get(HUGGINGFACE_API_KEY)
+#HUGGINGFACEHUB_API_TOKEN = os.environ.get(HUGGINGFACE_API_KEY)
 
 from langchain_huggingface import HuggingFaceEndpoint  # Import Hugging Face endpoint class
 from secret import HUGGINGFACE_API_KEY # Import secret API key from separate file
 from langchain.prompts import PromptTemplate  # Import PromptTemplate class from langchain
+from dotenv import load_dotenv
 
 import os  # Import the 'os' module for potential system interactions
 import re  # Import the 're' module for regular expressions
 import streamlit as st  # Import Streamlit for web app development
 
 
-# Set the Hugging Face Hub API token as an environment variable
-#os.environ['HUGGINGFACEHUB_API_TOKEN'] = HUGGINGFACE_API_KEY
+# === Load Environment Variables from .env ===
+load_dotenv()
+HUGGINGFACE_API_KEY  = os.getenv("HUGGINGFACEHUB_API_TOKEN")
 
 # Define the Hugging Face model repository ID
 #repo_id = "meta-llama/Meta-Llama-3-8B-Instruct"
